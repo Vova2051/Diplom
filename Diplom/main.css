@@ -1,0 +1,215 @@
+
+.reg_form,
+.login_form {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.regis {
+    text-decoration-color: #000; /* Поправив кольору на чорний */
+}
+
+
+body.index-body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.main-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.main-header-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-navigation-list,
+.user-navigation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header-navigation-item,
+.user-navigation-item {
+    margin-left: 20px;
+}
+
+.header-navigation-link,
+.user-login-link,
+.user-create-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header-navigation-link:hover,
+.user-login-link:hover,
+.user-create-link:hover {
+    color: #ffeb3b;
+}
+
+@media (max-width: 768px) {
+    .main-header-wrapper .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-navigation-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-navigation-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .user-navigation-list {
+        margin-top: 10px;
+    }
+}
+
+
+main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+main section h2 {
+    margin-bottom: 20px;
+}
+
+main section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+main section input,
+main section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+main section button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+main section button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+}
+.popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            display: none; 
+        }
+        .popup.show {
+            display: block; 
+        }
+        .popup-button {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .popup-button:hover {
+            background-color: #0056b3;
+        }
+        .login-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .login-form h2 {
+            margin-bottom: 20px;
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .login-form button:hover {
+            background-color: #0056b3;
+        }
+        .registration-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .registration-form h2 {
+            margin-bottom: 20px;
+        }
+        .registration-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .registration-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #28a745;
+            color: #fff;
+            cursor: pointer;
+        }
+        .registration-form button:hover {
+            background-color: #218838;
+        }
