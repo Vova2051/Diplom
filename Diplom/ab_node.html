@@ -6,16 +6,16 @@
     <link href="main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700&subset=cyrillic" rel="stylesheet">
     <link rel="icon" href="./img/logo.jpg" sizes="32x32">
-    <title>Вхід</title>
+    <title>JDCourses</title>
 </head>
-<body>
+<body class="index-body">
     <header class="main-header">
         <div class="main-header-wrapper">
             <div class="container">
                 <nav class="header-navigation">
                     <ul class="header-navigation-list">
-                        <a href="index.html"><img src="./img/logo.jpg" alt="JDCourses Logo" width="50" height="auto"></a>
-                        <li class="header-navigation-item">
+                         <a href="index.html"><img src="./img/logo.jpg" alt="JDCourses Logo" width="50" height="auto"></a>
+                         <li class="header-navigation-item">
                             <a href="index.html" class="header-navigation-link">Головна</a>
                         </li>
                         <li class="header-navigation-item">
@@ -49,21 +49,11 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="container">
-            <h2 align="center">Вхід</h2>
-            <form id="login-form">
-                <label for="username">Ім'я користувача:</label>
-                <input type="text" id="username" name="username" required>
-                
-                <label for="password">Пароль:</label>
-                <input type="password" id="password" name="password" required>
-                
-                <button type="submit">Увійти</button>
-            </form>
-        </div>
-    </main>
-    <footer>
+<!-- тут -->
+
+<!-- тут -->
+
+<footer>
         <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section about-section">
@@ -78,19 +68,7 @@
                         <li><a href="course.html">Курси</a></li>
                         <li><a href="about.html">Про нас</a></li>
                         <li><a href="help.html">Служба підтримки</a></li>
-                        <li class="header-navigation-item">
-                            <div id="user-info" style="display: none;">
-                                <span id="username-display"></span> | 
-                                <a href="#" id="logout-link" class="user-singout-link popup-link">Вийти</a>
-                            </div>
-                        </li>
-                        <li class="header-navigation-item">
-                            <a href="login-form.html" id="login-link" class="user-login-link popup-link">Увійти</a>
-                        </li>
-                        <li class="header-navigation-item"> 
-                            <a href="create-form.html" id="signup-link" class="user-create-link popup-link">Зареєструватися</a>
-                        </li>
-                    </ul>
+                       </ul>
                 </div>
                 <div class="footer-section contact-section">
                     <h4>Контакти</h4>
@@ -99,7 +77,7 @@
                 </div>
                 <div class="footer-section social-section">
                     <h4>Ми в соціальних мережах</h4>
-                     <div class="social-icons">
+                    <div class="social-icons">
                         <a href="#"><img src="./img/facebook-icon.png" alt="Facebook"></a>
                         <a href="#"><img src="./img/twitter-icon.png" alt="Twitter"></a>
                         <a href="#"><img src="./img/instagram-icon.png" alt="Instagram"></a>
@@ -111,17 +89,5 @@
             <p>&copy; 2023 JDCourses. Усі права захищені.</p>
         </div>
     </footer>
-    <script>
-        document.getElementById('login-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const username = document.getElementById('username').value;
-            const user = {
-                name: username,
-                isLoggedIn: true
-            };
-            localStorage.setItem('user', JSON.stringify(user));
-            window.location.href = 'index.html';
-        });
-    </script>
 </body>
 </html>
